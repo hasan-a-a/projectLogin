@@ -1,3 +1,20 @@
+let loginEl = document.getElementById("login")
+let username = ["admin01","admin02","admin03"]
+let password = [[1,2,3,],[2,3,4][3,4,5]]
+let welcomeEl = document.getElementById("welcome")
+function login() {
+  if(username[0] || password [0]){
+  welcomeEl.textContent = "welcome admin01"
+}else if(username[1] || password [1]){
+  welcomeEl.textContent = "welcome admin02"
+  = "welcome admin02"
+}else if(username[2] || password [2]){
+    welcomeEl.textContent = "welcome admin03"
+
+}else {
+  alert = "you have 3 attempts"
+}
+}
 const fighters = [
     "🐉",
     "🐥",
